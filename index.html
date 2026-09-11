@@ -3,212 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charan — 3D Motion & Visual Designer</title>
-<meta name="description" content="Charan is a 3D and motion designer working across Blender, Unreal Engine, and After Effects — cinematic visuals, animation, and motion graphics.">
+<title>Charan — 3D & Motion Creative</title>
+<meta name="description" content="Charan is a 3D and motion designer crafting cinematic environments and product renders with Blender, Unreal Engine and After Effects.">
+
+<meta property="og:title" content="Charan — 3D & Motion Creative">
+<meta property="og:description" content="Designing visuals that make people stop and look.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Charan — 3D & Motion Creative">
+<meta name="twitter:description" content="Designing visuals that make people stop and look.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grain"></div>
-
-<header class="topbar">
-  <a href="#top" class="wordmark">Charan</a>
-  <nav class="nav">
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <a href="#hero" class="brand">Charan</a>
+  <nav class="nav-desktop" aria-label="Primary">
+    <a href="#hero">Home</a>
+    <a href="#works">Works</a>
+    <a href="#about">About me</a>
+    <a href="#contact" class="nav-cta">Contact</a>
   </nav>
-  <a href="#contact" class="topbar-cta">Say hello</a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<main id="top">
+<nav class="nav-mobile" id="nav-mobile" aria-label="Mobile">
+  <a href="#hero">Home</a>
+  <a href="#works">Works</a>
+  <a href="#about">About me</a>
+  <a href="#contact" class="nav-cta">Contact</a>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <canvas id="grid-canvas"></canvas>
-    <div class="hero-inner">
-      <p class="hero-eyebrow">3D &amp; Motion Designer</p>
-      <h1 class="hero-title">Bringing imagination<br>to life, one frame<br>at a time.</h1>
-      <p class="hero-sub">I'm Charan — I build cinematic visuals, animation and motion graphics with Blender, Unreal Engine and After Effects.</p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">See the work</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="assets/video/hero-cottage.mp4" type="video/mp4">
+  </video>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <p class="frame-tag">F.001 — REEL 2025</p>
+    <h1 class="hero-title">Charan<span class="hero-title-sub">3D &amp; Motion Creative</span></h1>
+    <p class="hero-sub">Designing visuals that make people stop and look.</p>
+    <p class="hero-shop">Your one-stop shop for cinematic environments, product renders and motion design.</p>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <span>Works below</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ WORKS ============ -->
+<section class="works" id="works">
+  <div class="section-head">
+    <p class="section-eyebrow">F.002</p>
+    <h2>Cool stuff I've done</h2>
+  </div>
+
+  <!-- FLAGSHIP PROJECT -->
+  <article class="project project--flagship" data-project>
+    <div class="project-media project-media--flagship">
+      <video class="lazy-video" muted loop playsinline preload="none"
+        data-src="assets/video/garden-wide.mp4"></video>
+    </div>
+    <div class="project-info">
+      <div class="project-meta">
+        <span class="project-tag project-tag--personal">Personal Project</span>
+        <span class="project-date">Autumn 2025</span>
       </div>
-    </div>
-    <div class="hero-scroll-cue">
-      <span>Scroll</span>
-      <div class="scroll-line"><i></i></div>
-    </div>
-  </section>
-
-  <!-- WORK -->
-  <section id="work" class="work">
-    <div class="section-head">
-      <h2>Selected renders</h2>
-      <p>A working reel — personal studies and production shots, pulled straight from the render queue.</p>
-    </div>
-
-    <div class="work-grid">
-
-      <article class="work-card" data-frames="0000–0120">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/wasteland-relic.jpg" data-src="assets/videos/wasteland-relic.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Wasteland Relic</h3>
-          <p class="work-tags">Personal project · Hard-surface &amp; lookdev</p>
-          <p class="work-frames">Frames 0000–0120</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="0001–0072">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/monster-splash.jpg" data-src="assets/videos/monster-splash.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Monster — Splash</h3>
-          <p class="work-tags">Personal project · Fluid &amp; product sim</p>
-          <p class="work-frames">Frames 0001–0072</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="0001–0176">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/capsule-study.jpg" data-src="assets/videos/capsule-study.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Capsule Study</h3>
-          <p class="work-tags">Personal project · Product render</p>
-          <p class="work-frames">Frames 0001–0176</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="0001–0180">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/citrus-study.jpg" data-src="assets/videos/citrus-study.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Citrus Study</h3>
-          <p class="work-tags">Personal project · Look development</p>
-          <p class="work-frames">Frames 0001–0180</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="0001–0200">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/yacht-at-sea.jpg" data-src="assets/videos/yacht-at-sea.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Yacht at Sea</h3>
-          <p class="work-tags">Personal project · Ocean sim &amp; lighting</p>
-          <p class="work-frames">Frames 0001–0200</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="0001–0250">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/autumn-clearing.jpg" data-src="assets/videos/autumn-clearing.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Autumn Clearing</h3>
-          <p class="work-tags">Personal project · Environment</p>
-          <p class="work-frames">Frames 0001–0250</p>
-        </div>
-      </article>
-
-      <article class="work-card work-card--wide" data-frames="0001–0575">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/warehouse-interior.jpg" data-src="assets/videos/warehouse-interior.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Warehouse Interior</h3>
-          <p class="work-tags">Personal project · Lighting study, Unreal Engine</p>
-          <p class="work-frames">Frames 0001–0575</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="—">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/garden-window.jpg" data-src="assets/videos/garden-window.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Garden Window</h3>
-          <p class="work-tags">Personal project · Diorama, cinematic lighting</p>
-        </div>
-      </article>
-
-      <article class="work-card work-card--wide" data-frames="—">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/overgrown-ruins.jpg" data-src="assets/videos/overgrown-ruins.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Overgrown Ruins</h3>
-          <p class="work-tags">Personal project · Environment, Unreal Engine</p>
-        </div>
-      </article>
-
-      <article class="work-card" data-frames="0001–0250">
-        <div class="work-media">
-          <video muted loop playsinline preload="none" poster="assets/posters/garden-window-b.jpg" data-src="assets/videos/garden-window-b.mp4"></video>
-        </div>
-        <div class="work-meta">
-          <h3>Garden Window — Study B</h3>
-          <p class="work-tags">Personal project · Diorama variant</p>
-          <p class="work-frames">Frames 0001–0250</p>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="about-grid">
-      <div class="about-copy">
-        <h2>About</h2>
-        <p>I'm Charan, a 3D and motion designer who likes turning half-formed ideas into things that actually move. I split my time between Blender, Unreal Engine and After Effects — building 3D visuals, animation and motion graphics that lean cinematic.</p>
-        <p>What pulls me in is storytelling: lighting a scene until it feels like a place, timing a shot until it feels inevitable, syncing motion until it feels alive. I'm most excited by work that sits at the edge of design, technology and imagination — the projects where the brief is really "make me believe this."</p>
-        <a href="#contact" class="btn btn-primary">Let's work together</a>
+      <h3 class="project-title">The Hollow Garden</h3>
+      <p class="project-desc">An abandoned cottage swallowed by its own garden, built shot by shot in Unreal Engine. I wanted a scene that felt found rather than modelled — overgrown stone, birds cutting across a grey sky, a lens that lingers a beat too long.</p>
+      <div class="project-substrip" aria-label="Additional shots from The Hollow Garden">
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/garden-obelisk.mp4"></video>
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/garden-vine.mp4"></video>
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/garden-title.mp4"></video>
       </div>
-      <div class="about-tools">
-        <p class="about-tools-label">Toolkit</p>
-        <ul class="tool-list">
-          <li><span>Blender</span><em>Modeling, lighting, render</em></li>
-          <li><span>Unreal Engine</span><em>Real-time environments</em></li>
-          <li><span>After Effects</span><em>Motion &amp; compositing</em></li>
-        </ul>
+      <button class="project-link" data-open-full="assets/video/garden-full.mp4">Watch full sequence ↗</button>
+    </div>
+  </article>
+
+  <!-- PRODUCT REEL — grid of smaller cards -->
+  <div class="section-subhead">
+    <p class="section-eyebrow">F.003</p>
+    <h3>Product &amp; still-life renders</h3>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project project--card" data-project>
+      <div class="project-media">
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/product-yacht.mp4"></video>
       </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-tag project-tag--personal">Personal Project</span>
+          <span class="project-date">Summer 2025</span>
+        </div>
+        <h3 class="project-title">Adrift</h3>
+        <p class="project-desc">A superyacht holding its line against a slow grey swell — a study in scale and water simulation.</p>
+      </div>
+    </article>
+
+    <article class="project project--card" data-project>
+      <div class="project-media">
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/product-monster.mp4"></video>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-tag project-tag--personal">Personal Project</span>
+          <span class="project-date">Summer 2025</span>
+        </div>
+        <h3 class="project-title">Monster: Burst</h3>
+        <p class="project-desc">Fluid-sim splash work built around a can — chasing that impossible, hyper-clean commercial liquid look.</p>
+      </div>
+    </article>
+
+    <article class="project project--card" data-project>
+      <div class="project-media">
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/product-limes.mp4"></video>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-tag project-tag--personal">Personal Project</span>
+          <span class="project-date">Spring 2025</span>
+        </div>
+        <h3 class="project-title">Citrus Study</h3>
+        <p class="project-desc">A quiet lighting and shader exercise — texture, subsurface scattering and rim light on a pile of limes.</p>
+      </div>
+    </article>
+
+    <article class="project project--card" data-project>
+      <div class="project-media">
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/product-pods.mp4"></video>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-tag project-tag--personal">Personal Project</span>
+          <span class="project-date">Spring 2025</span>
+        </div>
+        <h3 class="project-title">Pulse</h3>
+        <p class="project-desc">Tight product choreography for a set of capsules — turntable lighting built to read at a glance.</p>
+      </div>
+    </article>
+
+    <article class="project project--card" data-project>
+      <div class="project-media">
+        <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/product-bolt.mp4"></video>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-tag project-tag--personal">Personal Project</span>
+          <span class="project-date">Winter 2024</span>
+        </div>
+        <h3 class="project-title">Relic</h3>
+        <p class="project-desc">A rusted, weathered mechanical part on scorched earth — a texturing and grime pass I keep coming back to.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-media">
+    <video class="lazy-video" muted loop playsinline preload="none" data-src="assets/video/about-space.mp4"></video>
+  </div>
+  <div class="about-content">
+    <p class="section-eyebrow">F.004</p>
+    <h2>About Me</h2>
+    <p class="about-lead">I'm Charan, a 3D and motion designer turning ideas into visual experiences worth pausing for.</p>
+    <p>I work mainly in Blender and Unreal Engine to build 3D visuals and environments, then bring them to life in After Effects — animation, motion graphics, and everything in between.</p>
+    <p>I'm especially excited by cinematic visuals, creative storytelling, and projects that sit at the crossroads of design, technology and imagination.</p>
+    <p class="about-mission">My mission: make every frame worth pausing for.</p>
+    <div class="tools">
+      <span>Blender</span><span>Unreal Engine</span><span>After Effects</span>
     </div>
-  </section>
+    <p class="about-cta">Working on something that needs a bit of visual magic? Let's talk.</p>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Let's build something<br>imaginative together.</h2>
-    <p>Have a project in mind, or just want to talk shop? My inbox is open.</p>
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <p class="section-eyebrow">F.005</p>
+  <h2>Hit me up</h2>
+  <p class="contact-lead">I'm Charan — a 3D &amp; motion designer, in case you scrolled straight here. Email is the fastest way to reach me.</p>
 
-    <div class="contact-row">
-      <button class="email-copy" id="email-copy" data-email="cnaik3984@gmail.com">
-        <span class="email-text">cnaik3984@gmail.com</span>
-        <span class="email-copy-label">Copy</span>
-      </button>
-    </div>
+  <button class="email-copy" id="email-copy" data-email="cnaik3984@gmail.com">
+    <span class="email-text">cnaik3984@gmail.com</span>
+    <span class="email-action">Copy email</span>
+  </button>
+  <p class="copy-confirm" id="copy-confirm" role="status" aria-live="polite">Copied!</p>
 
-    <div class="socials">
-      <a href="https://instagram.com/3d_loopzz" target="_blank" rel="noopener">Instagram</a>
-      <span class="dot">/</span>
-      <a href="mailto:cnaik3984@gmail.com">Email</a>
-    </div>
-  </section>
+  <div class="socials">
+    <p class="socials-note">Also on Instagram — but email gets the fastest reply.</p>
+    <a href="https://instagram.com/3d" target="_blank" rel="noopener">Instagram ↗</a>
+  </div>
+</section>
 
-  <footer class="footer">
-    <span>Charan</span>
-    <span>&copy; <span id="year"></span></span>
-  </footer>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <a href="#hero" class="brand">Charan</a>
+  <p>© <span id="year"></span> Charan. All rendered by hand.</p>
+  <div class="footer-socials">
+    <a href="https://instagram.com/3d" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+    <a href="mailto:cnaik3984@gmail.com" aria-label="Email">Email</a>
+  </div>
+</footer>
 
-</main>
+<!-- Full-sequence video modal -->
+<div class="video-modal" id="video-modal" hidden>
+  <div class="video-modal-backdrop" data-close-modal></div>
+  <div class="video-modal-body">
+    <button class="video-modal-close" data-close-modal aria-label="Close video">×</button>
+    <video id="modal-video" controls playsinline></video>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
