@@ -23,6 +23,37 @@ setInterval(updateClock, 30000);
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// ---- Video lightbox ----
+const lightbox = document.getElementById("lightbox");
+const lightboxVideo = document.getElementById("lightboxVideo");
+const lightboxTitle = document.getElementById("lightboxTitle");
+const lightboxClose = document.getElementById("lightboxClose");
+
+document.querySelectorAll(".work__card").forEach((card) => {
+  card.addEventListener("click", () => {
+    const src = card.dataset.video;
+    const title = card.dataset.title || "";
+    lightboxVideo.src = src;
+    lightboxTitle.textContent = title;
+    lightbox.classList.add("open");
+    lightboxVideo.play();
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightboxVideo.pause();
+  lightboxVideo.removeAttribute("src");
+  lightboxVideo.load();
+}
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeLightbox();
+});
+
 // ---- Mobile nav toggle ----
 const burger = document.getElementById("burger");
 const links = document.querySelector(".nav__links");

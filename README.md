@@ -1,9 +1,33 @@
-# Your Portfolio Site — Setup Guide
+# Charan — Portfolio Site — Setup Guide
 
-Three files make up the whole site:
+The site is now personalized with your name, bio, email, and 14 of your
+reels/renders. Files:
 - `index.html` — content and structure
 - `styles.css` — the dark/bold visual style
-- `script.js` — the live clock + mobile menu
+- `script.js` — live clock, mobile menu, and the click-to-play video lightbox
+- `videos/` — your reels, compressed for the web (see note below)
+- `images/posters/` — a thumbnail frame for each video, shown in the grid
+
+## About the video titles
+I drafted a title for each clip based on what's visible in the footage
+(e.g. "Forsaken Road — Environment Art" for the car-wreck forest scene,
+"Monster Splash — Liquid Simulation" for the energy-drink can). I don't
+know your actual project names, software breakdown per shot, or which
+studio/brief each was for — open `index.html`, find the `<h3>` and `<p>`
+text inside each `.work__card`, and swap in the real titles/credits.
+
+## About the video files
+Your originals totaled ~340MB combined (some 4K, up to 94MB each), which
+is too heavy for a fast-loading site and close to GitHub's per-file
+limits. I re-encoded all 14 to web-friendly H.264 MP4s (max 1920px wide,
+same look, ~68MB total) and put them in `videos/`. The homepage loads
+only the small poster images up front; clicking a card streams the full
+video in a lightbox player, so the page itself stays fast.
+
+If you'd rather keep the exact original files, replace anything in
+`videos/` with your own version — just keep the filenames referenced in
+`index.html`'s `data-video="videos/....mp4"` attributes, or update those
+attributes to match your new filenames.
 
 ## 1. Personalize the content
 
@@ -24,19 +48,14 @@ const CITY_LABEL = "Your City";
 const TIME_ZONE = "Europe/Rome"; // pick your IANA time zone
 ```
 
-## 2. Add your project images
+## 2. Swap or add more reels
 
-Put your images inside the `images/` folder, named to match what's
-referenced in `index.html`:
-```
-images/project-1.jpg
-images/project-2.jpg
-images/project-3.jpg
-images/project-4.jpg
-```
-Recommended: 1600px wide, landscape (16:10), compressed as .jpg or .webp
-so the site stays fast. If you don't have images yet, leave them out —
-the cards will just show a solid dark color instead of a broken image.
+To replace a reel: drop your file into `videos/`, replacing the old one
+(or add a new filename), then update that card's `data-video="videos/...` 
+attribute and its poster `background-image:url('images/posters/...')` in
+`index.html`. To generate a poster frame from a new video yourself later,
+you can use any free tool (e.g. VLC → Video → Take Snapshot) — aim for a
+frame that represents the shot well, saved as a `.jpg` around 800px wide.
 
 ## 3. Preview it locally
 

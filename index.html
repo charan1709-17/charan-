@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Design Portfolio</title>
-<meta name="description" content="Your Name is a designer helping brands look as good as the work behind them.">
+<title>Charan — 3D & Motion Creative</title>
+<meta name="description" content="Charan is a 3D and motion designer creating cinematic visuals, product renders, and animation with Blender, Unreal Engine, and After Effects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,11 +14,11 @@
 
 <!-- ===== NAV ===== -->
 <header class="nav">
-  <a href="#top" class="nav__logo">YN</a>
+  <a href="#top" class="nav__logo">C.</a>
   <div class="nav__meta" id="clock">— · —</div>
   <nav class="nav__links">
     <a href="#work">Work</a>
-    <a href="#method">Method</a>
+    <a href="#method">Process</a>
     <a href="#about">About</a>
     <a href="#contact" class="nav__cta">Contact</a>
   </nav>
@@ -29,14 +29,14 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
-  <p class="hero__kicker">Designer &amp; brand strategist</p>
+  <p class="hero__kicker">3D &amp; motion creative</p>
   <h1 class="hero__title">
-    Design your business<br>
-    can <span class="hero__title--serif">stand behind.</span>
+    Visuals that make<br>
+    people <span class="hero__title--serif">stop and look.</span>
   </h1>
   <p class="hero__sub">
-    I'm Your Name — I build brand identities and websites for founders
-    who've outgrown the site they launched with.
+    I'm Charan — a 3D and motion designer turning ideas into cinematic
+    visuals, product renders, and animation.
   </p>
   <a href="#work" class="hero__scroll">See the work ↓</a>
 </section>
@@ -44,18 +44,18 @@
 <!-- ===== CLIENT / SKILL STRIP ===== -->
 <section class="strip">
   <div class="strip__track">
-    <span>Brand strategy</span>
-    <span>Web design</span>
-    <span>Webflow / code</span>
-    <span>Art direction</span>
-    <span>Design systems</span>
-    <span>SEO-minded UX</span>
-    <span>Brand strategy</span>
-    <span>Web design</span>
-    <span>Webflow / code</span>
-    <span>Art direction</span>
-    <span>Design systems</span>
-    <span>SEO-minded UX</span>
+    <span>Blender</span>
+    <span>Unreal Engine</span>
+    <span>After Effects</span>
+    <span>3D animation</span>
+    <span>Motion graphics</span>
+    <span>Cinematic lighting</span>
+    <span>Blender</span>
+    <span>Unreal Engine</span>
+    <span>After Effects</span>
+    <span>3D animation</span>
+    <span>Motion graphics</span>
+    <span>Cinematic lighting</span>
   </div>
 </section>
 
@@ -63,118 +63,189 @@
 <section class="work" id="work">
   <div class="section-head">
     <h2>Selected work</h2>
-    <p>A few projects I'm proud to put my name on.</p>
+    <p>Click any piece to play the reel. Titles are drafted from the
+    footage — swap in your real project names any time.</p>
   </div>
 
   <div class="work__grid">
 
-    <a href="#" class="work__card work__card--wide">
-      <div class="work__img" style="background-image:url('images/project-1.jpg')"></div>
+    <button class="work__card work__card--wide" data-video="videos/overgrown-estate-reel.mp4" data-title="Overgrown Estate — Cinematic Reel">
+      <div class="work__img" style="background-image:url('images/posters/overgrown-estate-reel.jpg')"><span class="work__play">▶</span></div>
       <div class="work__info">
-        <h3>Project One Name</h3>
-        <p>Brand identity, web design, development</p>
+        <h3>Overgrown Estate — Cinematic Reel</h3>
+        <p>Full cinematic cut · environment &amp; lighting</p>
       </div>
-    </a>
+    </button>
 
-    <a href="#" class="work__card">
-      <div class="work__img" style="background-image:url('images/project-2.jpg')"></div>
+    <button class="work__card" data-video="videos/overgrown-estate.mp4" data-title="Overgrown Estate — Establishing Shot">
+      <div class="work__img" style="background-image:url('images/posters/overgrown-estate.jpg')"><span class="work__play">▶</span></div>
       <div class="work__info">
-        <h3>Project Two Name</h3>
-        <p>Web redesign, CMS build</p>
+        <h3>Overgrown Estate — Establishing Shot</h3>
+        <p>Environment · Unreal Engine</p>
       </div>
-    </a>
+    </button>
 
-    <a href="#" class="work__card">
-      <div class="work__img" style="background-image:url('images/project-3.jpg')"></div>
+    <button class="work__card" data-video="videos/hidden-house-aerial.mp4" data-title="Hidden House — Aerial Flythrough">
+      <div class="work__img" style="background-image:url('images/posters/hidden-house-aerial.jpg')"><span class="work__play">▶</span></div>
       <div class="work__info">
-        <h3>Project Three Name</h3>
-        <p>Art direction, packaging</p>
+        <h3>Hidden House — Aerial Flythrough</h3>
+        <p>Environment · cinematic camera</p>
       </div>
-    </a>
+    </button>
 
-    <a href="#" class="work__card work__card--wide">
-      <div class="work__img" style="background-image:url('images/project-4.jpg')"></div>
+    <button class="work__card" data-video="videos/stone-cottage.mp4" data-title="Stone Cottage — Environment Detail">
+      <div class="work__img" style="background-image:url('images/posters/stone-cottage.jpg')"><span class="work__play">▶</span></div>
       <div class="work__info">
-        <h3>Project Four Name</h3>
-        <p>Brand strategy, visual identity</p>
+        <h3>Stone Cottage — Environment Detail</h3>
+        <p>Environment · moody lighting study</p>
       </div>
-    </a>
+    </button>
+
+    <button class="work__card" data-video="videos/garden-obelisk.mp4" data-title="Garden Obelisk — Lighting Study">
+      <div class="work__img" style="background-image:url('images/posters/garden-obelisk.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Garden Obelisk — Lighting Study</h3>
+        <p>Environment · natural light</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/garden-muse.mp4" data-title="Garden Muse — Framed Study">
+      <div class="work__img" style="background-image:url('images/posters/garden-muse.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Garden Muse — Framed Study</h3>
+        <p>Composition &amp; motion graphics</p>
+      </div>
+    </button>
+
+    <button class="work__card work__card--wide" data-video="videos/forsaken-road.mp4" data-title="Forsaken Road — Environment Art">
+      <div class="work__img" style="background-image:url('images/posters/forsaken-road.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Forsaken Road — Environment Art</h3>
+        <p>Post-apocalyptic scene · Unreal Engine</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/forsaken-road-wide.mp4" data-title="Forsaken Road — Widescreen Cut">
+      <div class="work__img" style="background-image:url('images/posters/forsaken-road-wide.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Forsaken Road — Widescreen Cut</h3>
+        <p>Cinematic crop</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/derelict-warehouse.mp4" data-title="Derelict Warehouse — Walkthrough">
+      <div class="work__img" style="background-image:url('images/posters/derelict-warehouse.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Derelict Warehouse — Walkthrough</h3>
+        <p>Environment · camera flythrough</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/yacht-sea.mp4" data-title="Yacht at Sea — Cinematic Scene">
+      <div class="work__img" style="background-image:url('images/posters/yacht-sea.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Yacht at Sea — Cinematic Scene</h3>
+        <p>VFX · ocean simulation</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/monster-splash.mp4" data-title="Monster Splash — Liquid Simulation">
+      <div class="work__img" style="background-image:url('images/posters/monster-splash.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Monster Splash — Liquid Simulation</h3>
+        <p>Product render · fluid sim</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/sparkplug.mp4" data-title="Spark Plug — Product Render">
+      <div class="work__img" style="background-image:url('images/posters/sparkplug.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Spark Plug — Product Render</h3>
+        <p>Product visualization</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/bottle-caps.mp4" data-title="Bottle Caps — Product Render">
+      <div class="work__img" style="background-image:url('images/posters/bottle-caps.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Bottle Caps — Product Render</h3>
+        <p>Product visualization</p>
+      </div>
+    </button>
+
+    <button class="work__card" data-video="videos/limes.mp4" data-title="Limes — Macro Render">
+      <div class="work__img" style="background-image:url('images/posters/limes.jpg')"><span class="work__play">▶</span></div>
+      <div class="work__info">
+        <h3>Limes — Macro Render</h3>
+        <p>Product visualization · macro</p>
+      </div>
+    </button>
 
   </div>
 </section>
 
+<!-- ===== VIDEO LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox__inner">
+    <video id="lightboxVideo" controls playsinline></video>
+    <p class="lightbox__title" id="lightboxTitle"></p>
+  </div>
+</div>
+
 <!-- ===== ABOUT / WHAT SETS APART ===== -->
 <section class="about" id="about">
   <div class="section-head">
-    <h2>How I work</h2>
-    <p>Four things that shape every project.</p>
+    <h2>About</h2>
   </div>
-  <div class="about__grid">
-    <div class="about__item">
-      <h3>Built around your brand</h3>
-      <p>No templates, no copying competitors. I start with your
-      positioning and voice, so the result looks unmistakably like you.</p>
-    </div>
-    <div class="about__item">
-      <h3>Designed to convert</h3>
-      <p>Every layout is built on user research and intent, not just
-      good looks — so the site earns trust and generates leads.</p>
-    </div>
-    <div class="about__item">
-      <h3>One point of contact</h3>
-      <p>Strategy, design and build happen with me directly. No
-      handoff loss, no diluted vision between teams.</p>
-    </div>
-    <div class="about__item">
-      <h3>Support after launch</h3>
-      <p>Launch is the start, not the finish. I stick around for
-      edits, iteration and questions as your business grows.</p>
-    </div>
-  </div>
+  <p class="about__bio">
+    I'm Charan, a 3D and motion designer passionate about turning ideas
+    into engaging visual experiences. I work with tools like Blender,
+    Unreal Engine, and After Effects to create 3D visuals, animations,
+    and motion graphics. I'm especially excited by cinematic visuals,
+    creative storytelling, and projects that blend design, technology,
+    and imagination.
+  </p>
 </section>
 
 <!-- ===== METHOD ===== -->
 <section class="method" id="method">
   <div class="section-head">
     <h2>The process</h2>
-    <p>Four phases, from first call to launch.</p>
+    <p>From first reference to final render.</p>
   </div>
 
   <div class="method__list">
     <div class="method__step">
       <span class="method__num">01</span>
       <div>
-        <h3>Position</h3>
-        <p>We define direction — references, colour, type — until you
-        can point at something and say "that's it."</p>
-        <span class="method__time">Week 1</span>
+        <h3>Concept</h3>
+        <p>Moodboards, references, and rough blocking to lock the
+        mood, camera, and story before any final assets are built.</p>
       </div>
     </div>
     <div class="method__step">
       <span class="method__num">02</span>
       <div>
-        <h3>Structure</h3>
-        <p>Wireframes map how each page works, while the visual
-        direction gets tested on a real homepage layout.</p>
-        <span class="method__time">Week 2</span>
+        <h3>Look development</h3>
+        <p>Modeling, texturing, and lighting come together in Blender
+        or Unreal until the scene reads exactly as intended.</p>
       </div>
     </div>
     <div class="method__step">
       <span class="method__num">03</span>
       <div>
-        <h3>Build</h3>
-        <p>Design and development happen together, so nothing gets
-        lost translating a static mockup into a working site.</p>
-        <span class="method__time">Weeks 3–5</span>
+        <h3>Animation</h3>
+        <p>Camera moves, simulations, and motion are refined pass by
+        pass, keeping performance and story front and center.</p>
       </div>
     </div>
     <div class="method__step">
       <span class="method__num">04</span>
       <div>
-        <h3>Launch</h3>
-        <p>We test, ship, and I hand over everything you need to run
-        the site yourself, plus SEO basics from day one.</p>
-        <span class="method__time">Week 6</span>
+        <h3>Render &amp; composite</h3>
+        <p>Final render passes are composited and graded in After
+        Effects for a finished, cinematic result.</p>
       </div>
     </div>
   </div>
@@ -184,18 +255,18 @@
 <section class="contact" id="contact">
   <h2>Have a project in mind?</h2>
   <p>Tell me what you're building — I'll reply within a day.</p>
-  <a href="mailto:you@example.com?subject=Project%20inquiry" class="contact__cta">
-    you@example.com
+  <a href="mailto:cnaik3984@gmail.com?subject=Project%20inquiry" class="contact__cta">
+    cnaik3984@gmail.com
   </a>
   <div class="contact__socials">
     <a href="#" target="_blank" rel="noopener">LinkedIn</a>
     <a href="#" target="_blank" rel="noopener">Instagram</a>
-    <a href="#" target="_blank" rel="noopener">Dribbble</a>
+    <a href="#" target="_blank" rel="noopener">ArtStation</a>
   </div>
 </section>
 
 <footer class="footer">
-  <span>© <span id="year"></span> Your Name</span>
+  <span>© <span id="year"></span> Charan</span>
   <span id="clock-footer">—</span>
 </footer>
 
